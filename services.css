@@ -1,0 +1,33 @@
+* {
+    margin: 40px;
+    padding:0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ 
+
+  
+/*-----------------features---------*/
+
+.features{
+
+  margin:10px;
+
+}
+
+.features h5{
+
+  margin-top: 100px;
+  line-height: 1px !important;
+}
+
+/*-------------feature ------------*/
+
+.vl {
+    border-left: 3px solid green;
+    height: 600px;
+    position: absolute;
+    left: 40%;
+    margin-left: 1px;
+    top: -10;
+  }
+  
