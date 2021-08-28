@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding:0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .header {
+    background: red;
+    
+  }
+  .navbar {
+    padding-top: 20px !important;
+    padding-left: 5px;
+  }
+  .nav-item {
+    margin-left: 40px;
+    margin-bottom: 5px;
+    
+  }
+  .nav-link {
+    color:white!important;
+    font-size: 15px !important;
+    padding: 0 0 5px 0 !important;
+    display: unset !important;
+    font-weight: 300%!important;
+    font-family: serif;
+  }
+  .navbar-brand img {
+    width: 125px;
+    
+  }
+  .fa-bars {
+    color: #fff;
+    font-size: 40px!important;
+  }
+  .navbar-toggler {
+    border: 0 !important;
+    outline: none !important;
+    padding: initial !important;
+  }
+  .active-home {
+    border-bottom: 2px solid #fff;
+  }
+  .nav-link:hover {
+    border-bottom: 2px solid #fff;
+  }
+  .sub-text {
+
+  text-align:center;
+  color:black;
+  line-height: normal; 
+  text-align: center;
+  
+  
+  }
+
+  .footer{
+  
+    background-color:red;
+    color: white !important;
+  
+    margin: 0%;
+   
+  }
+  
+  .footer small{
+  
+    font-size: 14px;
+    padding:2px;
+    padding-bottom: 1px;
+    
+   
+  }
+  .link{
+    font-size: 14px;
+    padding:2px;
+    color:#fff;
+    text-align: right;
+
+  }
+  .links{
+    font-size: 14px;
+    padding:0;
+    margin:5px;
+    padding-bottom: 1px;
+    color:#fff;
+    display:block;
+    text-align: left;
+
+  }
+   #year{
+     color:white;
+
+   }

@@ -3,29 +3,90 @@
     <head>
         <title>Login Form</title>
         <link rel="stylesheet" href="login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+       
+       <script>
+          function myFunction() {
+            alert("Please SignUp");
+          }
+          </script>
 
     </head>
     <body>
-        <div class="loginbox">
-            <img src="/images/avatar.png" class="avatar">
-            <h1>Login Here</h1>
-            <form>
-                <label for="username"><b>UserName</b></label>
-                <input type="text" placeholder="Enter UserName" name="username" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <input type="submit" name="password" value="Login">
-                <a href="#">Lost your password?</a></br>
-                <a href ="/signup.html" onclick="myFunction()">Dont have an account?</a>
-
-            </form>
+      <section class="header">
+        <div class="containers">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="/images/Funeral Home Logo.png" style="background-color: white; "></a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/services.html" >SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact.html" >CONTACTS</a>
+                    </li>
+                  
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-dark text-right" onclick="location.href='signup.html'">SIGNUP</button>  
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+              
         </div>
+      </section>
 
-        <script>
-            function myFunction() {
-              alert("Please SignUp");
-            }
-            </script>
+        <section class="imgcontainer text-center">
+        
+          
+        <div class="container">
+          <section class="img">
+            <img src="./images/avatar.png" alt="Avatar" class="avatar">
+          </section>
+          <label for="parl"><b>UserName</b></label>
+          <input type="text" class="form-control" id="floatingPourname" placeholder="Enter UserName" required>
+          <label for="fullname"><b>Password</b></label>
+          <input type="text" class="form-control" id="fullname " placeholder="Enter Password" required>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container ">
+          <button type="button" class="cancelbtn" onclick="location.href='home.html'">Submit</button>
+          <button type="button" class="cancelbtn" onclick="location.href='home.html'">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+            <section class="footer">
+    
+              <form>
+                  <p>&copy;<small id="year"></small>|Open Source Funeral Home Administration</p>
+                  
+                      <script>
+                        {
+                          document.getElementById("year").innerHTML=(new Date).getFullYear();
+                        }
+                        </script>
+                      
+                  <div class="link">
+                
+                      <small>Developed and Designed by: <a href="https://www.google.com">TUMI&NKO IT Company</a></small>
+                      </form>
+                  </div>
+               </section>
+        </section>
     </body>
 
 </html>

@@ -4,43 +4,45 @@
         <title>Open Source Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+       
     </head>
     <body>
-        <section class="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
-                      <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav ml-auto text-right">
-                        <li class="nav-item">
-                          <a class="nav-link active-home" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/services.html" >SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">CONTACT US</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <button type="button" class="btn btn-dark text-right" onclick="location.href='login.html'">LOGIN</button>
-                          </li>
-                          <li class="nav-item">
-                            <button type="button" class="btn btn-dark text-right" onclick="location.href='signup.html'">SIGNUP</button>  
-                          </li>
-                      </ul>
-                    </div>
-                  </nav>
-                  
-            </div>
-        </section>
+      <section class="header">
+        <div class="containers">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/services.html" >SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact.html" >CONTACTS</a>
+                    </li>
+                    
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-dark text-right" onclick="location.href='login.html'">LOGIN</button>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-dark text-right" onclick="location.href='signup.html'">SIGNUP</button>  
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+              
+        </div>
+      </section>
         <section class="service">
           <section class="features">
               <div class="container">
@@ -49,10 +51,10 @@
                           <img src="./images/Funeral Home Logo.png" height="200px" width="300px" >
                      </div>
                       <div class="col-md-6">
-                          <h2 class="title" text-white bg-dark >Welcome to Open Source Funeral Home Administration.</h2>
-                          <h5 text-white bg-dark >We provide a wide range of services</h5>
-                          <h5 text-white bg-dark>We ofter software solution to FuneralParlours.</h5>
-                          <h5 text-white bg-dark>Our software system provides you with all the nessary tools you need to take your business to the next level</h5> 
+                          <h2 class="title" text-white sm-dark >Welcome to Open Source Funeral Home Administration.</h2>
+                          <h5 text-white >We provide a wide range of services.</h5>
+                          <h5 text-white >We ofter software solution to FuneralParlours.</h5>
+                          <h5 text-white>Our software system provides you with all the nessary tools you need to take your business to the next level.</h5> 
                       </div>
                       
     
@@ -70,7 +72,13 @@
     
           <div>
               <form>
-                  <small>Copyright@2021|Open Source Funeral Home Administration</small>
+                  <p>&copy;<small id="year"></small>|Open Source Funeral Home Administration</p>
+                  
+                      <script>
+                        {
+                          document.getElementById("year").innerHTML=(new Date).getFullYear();
+                        }
+                        </script>
               </form>
           </div>
           <div class="link">
@@ -79,7 +87,7 @@
               </form>
           </div>
              
-    
+          
           
       </section>
       
